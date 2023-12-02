@@ -3,15 +3,6 @@
 require_once __DIR__ . "/../core/database.php";
 $db = new Database();
 $data = $db->select('categories');
-
-
-$cssFilePath = __DIR__ . "/style.css";
-if (file_exists($cssFilePath)) {
-    echo "CSS file found: $cssFilePath";
-} else {
-    echo "CSS file not found: $cssFilePath";
-}
-
 ?>
 
 
